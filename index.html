@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackWISE - Track Your Money, Master Your Future</title>
+    <meta
+      name="description"
+      content="TrackWISE helps you stay on top of your income, control your daily spending, budget and achieve your financial goals."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css?v=8" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <img class="logo-icon" src="logo-green.png" alt="TrackWISE Logo" />
+        </a>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle Navigation"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="nav" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item dropdown">
+              <a href="#features" class="nav-link"
+                >Features <span class="chevron"></span
+              ></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#how-it-works" class="nav-link"
+                >How it Works <span class="chevron"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Company</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="auth-buttons">
+          <button class="btn btn-login" id="login-btn-header">Log in</button>
+          <button class="btn btn-signup" id="signup-btn-header">Sign up</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="speckled-overlay"></div>
+      <div class="visual-bg-circle"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Track Your Money <br />Master Your Future.</h1>
+          <p class="hero-subtitle">
+            TrackWise helps you stay on top of your income, control your daily
+            spending, budget and achieve your financial goals.
+          </p>
+
+          <div class="download-badges">
+            <!-- App Store Badge -->
+            <a href="#" class="badge-btn">
+              <i class="fa-brands fa-apple badge-icon"></i>
+              <div class="badge-text">
+                <span class="badge-small">Download on the</span>
+                <span class="badge-large">App Store</span>
+              </div>
+            </a>
+
+            <!-- Google Play Badge -->
+            <a href="#" class="badge-btn">
+              <i class="fa-brands fa-google-play badge-icon"></i>
+              <div class="badge-text">
+                <span class="badge-small">GET IT ON</span>
+                <span class="badge-large">Google Play</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- MacBook Pro Mockup -->
+          <img
+            class="laptop-img"
+            src="macbook-pro.png"
+            alt="TrackWISE Dashboard on MacBook"
+          />
+
+          <!-- Slanted Phone Mockup -->
+          <img
+            class="phone-img"
+            src="slanted-phone.png"
+            alt="TrackWISE App on Mobile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="features-visual-bg"></div>
+      <div class="container">
+        <h2 class="section-title text-center">Our Features</h2>
+        <div class="features-wrapper">
+          <!-- Floating Mockup Phone (Left) -->
+          <div class="features-visual">
+            <img
+              class="features-img"
+              src="held-sidephone.png"
+              alt="TrackWISE App Features"
+            />
+          </div>
+
+          <!-- 2x2 Grid of Feature Cards (Right) -->
+          <div class="features-grid">
+            <!-- Card 1 -->
+            <div class="feature-card bg-light-green">
+              <div class="feature-icon-wrapper">
+                <!-- SVG Receipt Icon -->
+                <i
+                  class="fa-solid fa-receipt feature-icon"
+                  style="font-size: 24px"
+                ></i>
+              </div>
+              <h3 class="feature-card-title">Income & Expense Tracking</h3>
+              <p class="feature-card-desc">
+                Easily log what you earn and spend, and stay within your budget.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card bg-dark-teal">
+              <div class="feature-icon-wrapper">
+                <!-- SVG Bar Chart Icon -->
+                <i
+                  class="fa-solid fa-chart-simple feature-icon colored"
+                  style="font-size: 24px"
+                ></i>
+              </div>
+              <h3 class="feature-card-title">Visual Reports</h3>
+              <p class="feature-card-desc">
+                Get graphs and weekly summaries to better understand your
+                finances.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card bg-dark-teal">
+              <div class="feature-icon-wrapper">
+                <!-- SVG Bell/Clock Icon -->
+                <i
+                  class="fa-solid fa-bell feature-icon colored"
+                  style="font-size: 24px"
+                ></i>
+              </div>
+              <h3 class="feature-card-title">Smart Reminders</h3>
+              <p class="feature-card-desc">
+                Set alerts to log spending or check your weekly budget.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="feature-card bg-light-green">
+              <div class="feature-icon-wrapper">
+                <!-- SVG Lightbulb/Insight Icon -->
+                <i
+                  class="fa-solid fa-lightbulb feature-icon"
+                  style="font-size: 24px"
+                ></i>
+              </div>
+              <h3 class="feature-card-title">Financial Insights</h3>
+              <p class="feature-card-desc">
+                Receive intelligent tips based on your habits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="speckled-overlay"></div>
+      <div class="container">
+        <h2 class="section-title text-center">How It Works</h2>
+
+        <div class="steps-grid">
+          <div class="step-card step-1">
+            <span class="step-text">1. Create your free account</span>
+          </div>
+          <div class="step-card step-2">
+            <span class="step-text">2. Set your budget and goals</span>
+          </div>
+          <div class="step-card step-3">
+            <span class="step-text">3. Track income & expenses</span>
+          </div>
+          <div class="step-card step-4">
+            <span class="step-text">4. Get smart reports & reminders</span>
+          </div>
+        </div>
+
+        <div class="how-it-works-visual">
+          <div class="how-visual-bg"></div>
+          <img
+            class="how-works-img"
+            src="held-phone.png"
+            alt="How TrackWISE works"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-visual-bg"></div>
+      <div class="container">
+        <h2 class="section-title text-center">Testimonials</h2>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="user-avatar-placeholder">
+              <i class="fa-solid fa-circle-user" style="font-size: 40px"></i>
+            </div>
+            <div class="star-rating">
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">
+              “Great app! Love the visuals. Just waiting for dark mode and more
+              currency options.”
+            </p>
+            <h4 class="testimonial-user">— Emeka T.</h4>
+          </div>
+
+          <!-- Testimonial 2 (Featured) -->
+          <div class="testimonial-card featured">
+            <div class="user-avatar-placeholder">
+              <i class="fa-solid fa-circle-user" style="font-size: 40px"></i>
+            </div>
+            <div class="star-rating">
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+            </div>
+            <p class="testimonial-text">
+              “Clean UI, helpful reports, and the reminders keep me on track.
+              Budgeting has never felt this easy!”
+            </p>
+            <h4 class="testimonial-user">— Jasmine U.</h4>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="user-avatar-placeholder">
+              <i class="fa-solid fa-circle-user" style="font-size: 40px"></i>
+            </div>
+            <div class="star-rating">
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+              <span class="star active">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">
+              “Does the job well. Would be better with bank sync and more tips.”
+            </p>
+            <h4 class="testimonial-user">— Tolu M.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="faq-visual-bg"></div>
+      <div class="container">
+        <h2 class="section-title">FAQs</h2>
+
+        <div class="faq-accordion-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-header">
+              <span class="faq-question">“Is Track Wise free?”</span>
+              <div class="faq-arrow-btn">
+                <i class="fa-solid fa-chevron-down" style="font-size: 14px"></i>
+              </div>
+            </button>
+            <div class="faq-body">
+              <div class="faq-answer">
+                Yes! Track Wise is completely free to download and use for basic
+                expense tracking and budgeting. We also offer premium features
+                for advanced analytics and team budgets.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-header">
+              <span class="faq-question">“Can I use it offline?”</span>
+              <div class="faq-arrow-btn">
+                <i class="fa-solid fa-chevron-down" style="font-size: 14px"></i>
+              </div>
+            </button>
+            <div class="faq-body">
+              <div class="faq-answer">
+                Yes, you can log transactions and check your budget offline.
+                Your data will automatically sync once your device connects back
+                to the internet.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-header">
+              <span class="faq-question">“Is my data secure?”</span>
+              <div class="faq-arrow-btn">
+                <i class="fa-solid fa-chevron-down" style="font-size: 14px"></i>
+              </div>
+            </button>
+            <div class="faq-body">
+              <div class="faq-answer">
+                Absolutely. We use bank-grade encryption to secure your
+                financial data and never share your personal information with
+                third parties.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-header">
+              <span class="faq-question">“Does it work on Android & iOS?”</span>
+              <div class="faq-arrow-btn">
+                <i class="fa-solid fa-chevron-down" style="font-size: 14px"></i>
+              </div>
+            </button>
+            <div class="faq-body">
+              <div class="faq-answer">
+                Yes, Track Wise is available for download on both the Google
+                Play Store for Android and the Apple App Store for iOS devices.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="company">
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <img
+            class="footer-logo-img"
+            src="logo-white.png"
+            alt="TrackWISE Logo"
+            width="40"
+            height="40"
+          />
+          <a href="#" class="footer-logo-text"
+            >Track<span class="footer-logo-wise">WISE</span></a
+          >
+        </div>
+        <p class="footer-tagline">Your financial clarity starts here</p>
+
+        <div class="social-links">
+          <!-- X/Twitter -->
+          <a href="#" class="social-icon-btn" aria-label="Twitter X">
+            <i class="fa-brands fa-x-twitter" style="font-size: 20px"></i>
+          </a>
+          <!-- Instagram -->
+          <a href="#" class="social-icon-btn" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" style="font-size: 20px"></i>
+          </a>
+          <!-- Facebook -->
+          <a href="#" class="social-icon-btn" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" style="font-size: 20px"></i>
+          </a>
+        </div>
+
+        <div class="download-badges footer-badges">
+          <!-- App Store Badge -->
+          <a href="#" class="badge-btn light-border">
+            <i class="fa-brands fa-apple badge-icon"></i>
+            <div class="badge-text">
+              <span class="badge-small">Download on the</span>
+              <span class="badge-large">App Store</span>
+            </div>
+          </a>
+
+          <!-- Google Play Badge -->
+          <a href="#" class="badge-btn light-border">
+            <i class="fa-brands fa-google-play badge-icon"></i>
+            <div class="badge-text">
+              <span class="badge-small">GET IT ON</span>
+              <span class="badge-large">Google Play</span>
+            </div>
+          </a>
+        </div>
+
+        <a href="mailto:support@trackwise.com" class="contact-support-btn">
+          <i class="fa-solid fa-phone" style="font-size: 20px"></i>
+          <span>Contact Support</span>
+        </a>
+
+        <div class="footer-links">
+          <a href="#" class="footer-link">About</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
